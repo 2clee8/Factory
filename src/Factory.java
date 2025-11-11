@@ -23,6 +23,9 @@ public class Factory {
         factoryInfo();
 
         //todo right here
+        yearFounded = 2024;
+        factoryInfo();
+
     }
 
     //empty method called factoryInfo
