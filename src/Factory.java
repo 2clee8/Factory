@@ -41,6 +41,7 @@ public class Factory {
         plane1.model = "Boeing 777";
         System.out.println(plane1.name);
         Airplane plane2 = new Airplane();
+        //"capacity" will print out the one from the other class
         System.out.println(plane2.capacity);
 
 
