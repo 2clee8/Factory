@@ -34,15 +34,53 @@ public class Factory {
         //type varName = value
         //object of type airplane
 
+        //1st airplane
         Airplane plane1 = new Airplane();
-        plane1.name = "jeff";plane1.capacity = 635;
+
+        plane1.name = "jeff";
+        plane1.capacity = 635;
         plane1.doubleDecker = false;
         plane1.length = 36;
         plane1.model = "Boeing 777";
-        System.out.println(plane1.name);
+
+        //2nd  airplane
         Airplane plane2 = new Airplane();
-        //"capacity" will print out the one from the other class
+
+        System.out.println(plane2.name);
         System.out.println(plane2.capacity);
+        System.out.println(plane2.model);
+        System.out.println(plane2.doubleDecker);
+        System.out.println(plane2.length);
+
+        //plane3
+        Airplane plane3 = new Airplane();
+        plane3.name = "Bob";
+        plane3.capacity = 360;
+        plane3.model = "Airbus A350";
+        plane3.doubleDecker = false;
+        plane3.length = 200;
+
+
+        //plane 4
+        Airplane plane4 = new Airplane();
+        plane4.name = "Cleopatra";
+        plane4.capacity = 365;
+        plane4.model = "Boeing 747";
+        plane4.doubleDecker = true;
+        plane4.length = 250;
+
+        //print airplane 3 and 4
+        System.out.println(plane3.name);
+        System.out.println(plane3.capacity);
+        System.out.println(plane3.model);
+        System.out.println(plane3.doubleDecker);
+        System.out.println(plane3.length);
+
+        System.out.println(plane4.name);
+        System.out.println(plane4.capacity);
+        System.out.println(plane4.model);
+        System.out.println(plane4.doubleDecker);
+        System.out.println(plane4.length);
 
 
     }
