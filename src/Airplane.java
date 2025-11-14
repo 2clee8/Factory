@@ -11,11 +11,22 @@ public class Airplane {
 
     //constructor
     public Airplane(){
-        capacity = 250;
+        capacity = 150;
         name = "Jacob";
         model = "boeing 777";
         doubleDecker = false;
         length = 150;
 
+    }
+    //constructor w/ parameter
+    public Airplane(int pCapacity){
+        capacity = pCapacity;
+    }
+    public void printInfo(){
+        System.out.println(capacity);
+        System.out.println(model);
+        System.out.println(doubleDecker);
+        System.out.println(name);
+        System.out.println(length);
     }
 }

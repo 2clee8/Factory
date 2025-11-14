@@ -53,12 +53,9 @@ public class Factory {
         System.out.println(plane2.length);
 
         //plane3
-        Airplane plane3 = new Airplane();
-        plane3.name = "Bob";
-        plane3.capacity = 360;
-        plane3.model = "Airbus A350";
-        plane3.doubleDecker = false;
-        plane3.length = 200;
+        Airplane plane3 = new Airplane(232);
+        System.out.println(plane3.capacity);
+        plane3.printInfo();
 
 
         //plane 4
@@ -69,13 +66,7 @@ public class Factory {
         plane4.doubleDecker = true;
         plane4.length = 250;
 
-        //print airplane 3 and 4
-        System.out.println(plane3.name);
-        System.out.println(plane3.capacity);
-        System.out.println(plane3.model);
-        System.out.println(plane3.doubleDecker);
-        System.out.println(plane3.length);
-
+        //plane 4
         System.out.println(plane4.name);
         System.out.println(plane4.capacity);
         System.out.println(plane4.model);
