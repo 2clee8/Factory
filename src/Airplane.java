@@ -6,7 +6,7 @@ public class Airplane {
     public int capacity;
     public String name;
     public String model;
-    public boolean doubleDecker;
+    public boolean isDoubleDecker;
     public int length;
 
     //constructor
@@ -14,19 +14,24 @@ public class Airplane {
         capacity = 150;
         name = "Jacob";
         model = "boeing 777";
-        doubleDecker = false;
+        isDoubleDecker = false;
         length = 150;
 
     }
     //constructor w/ parameter
-    public Airplane(int pCapacity){
+
+    public Airplane(int pCapacity, String pName, String pModel, boolean pisDoubleDecker, int pLength){
         capacity = pCapacity;
+        name = pName;
+        model = pModel;
+        isDoubleDecker = pisDoubleDecker;
+        length = pLength;
     }
     public void printInfo(){
-        System.out.println(capacity);
-        System.out.println(model);
-        System.out.println(doubleDecker);
-        System.out.println(name);
-        System.out.println(length);
+        System.out.println(capacity); //not readable
+        System.out.println("Model: " + model); //readable
+        System.out.println(isDoubleDecker); //not readable
+        System.out.println("this plane is named " + name); //more fancy readable
+        System.out.println("The length of the plane is " + length + "feet");
     }
 }
