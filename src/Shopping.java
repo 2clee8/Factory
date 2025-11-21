@@ -22,6 +22,9 @@ public class Shopping {
 
     public void printInfo() {
         System.out.println(brand); //not readable
+        System.out.println(numberOfStores);
+        System.out.println(revenue);
+        System.out.println(expensive);
     }
 
 }

@@ -27,7 +27,6 @@ public class Factory {
         System.out.println(manager);
         factoryInfo();
 
-        //todo right here
         yearFounded = 2024;
         factoryInfo();
 
@@ -73,6 +72,15 @@ public class Factory {
         System.out.println(plane4.isDoubleDecker);
         System.out.println(plane4.length);
 
+        //shopping objects
+        // no parameter constructor
+        Shopping shop1 = new Shopping();
+        shop1.printInfo();
+
+        //parameter constructor
+        Shopping shop2 = new Shopping("LoveShackFancy", 21, 916.2, true);
+        shop2.printInfo();
+
 
     }
 
@@ -82,4 +90,5 @@ public class Factory {
         System.out.println(isOpen);
         System.out.println("year founded " + yearFounded);
     }
+
 }
