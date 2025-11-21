@@ -21,10 +21,10 @@ public class Shopping {
     }
 
     public void printInfo() {
-        System.out.println(brand); //not readable
-        System.out.println(numberOfStores);
-        System.out.println(revenue);
-        System.out.println(expensive);
+        System.out.println("Welcome to " + brand); //not readable
+        System.out.println("There are " + numberOfStores + " stores across the world.");
+        System.out.println("Annually, we make around " + revenue + " in revenue.");
+        System.out.println("It is " + expensive + " that our brand is expensive.");
     }
 
 }
